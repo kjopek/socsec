@@ -38,13 +38,13 @@ from Crypto.Cipher import PKCS1_v1_5 as Cipher_pkcs1_v1_5
 from ecdsa import SigningKey, VerifyingKey, NIST384p
 from ecdsa.ellipticcurve import Point
 
-from socsec import rsa_importkey
-from socsec import parse_path
-from socsec import insert_bytearray
-from socsec import rsa_bit_length
-from socsec import rsa_key_to_bin
-from socsec import hexdump
-from socsec import OTP_info
+from socsec.tools import rsa_importkey
+from socsec.tools import parse_path
+from socsec.tools import insert_bytearray
+from socsec.tools import rsa_bit_length
+from socsec.tools import rsa_key_to_bin
+from socsec.tools import hexdump
+from socsec.tools import OTP_info
 from socsec import __version__
 
 RSA_SHA = 1        # mode 2

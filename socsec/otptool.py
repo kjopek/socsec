@@ -28,16 +28,16 @@ import math
 from bitarray import bitarray
 from jsonschema import validate
 from Crypto.Hash import SHA256
-from socsec import parse_path
-from socsec import insert_bytearray
-from socsec import rsa_bit_length
-from socsec import rsa_key_to_bin
-from socsec import ecdsa_key_to_bin
-from socsec import hexdump
-from socsec import OTP_info
 from socsec import __version__
-from socsec import version2int
-from socsec import int2version
+from socsec.tools import parse_path
+from socsec.tools import insert_bytearray
+from socsec.tools import rsa_bit_length
+from socsec.tools import rsa_key_to_bin
+from socsec.tools import ecdsa_key_to_bin
+from socsec.tools import hexdump
+from socsec.tools import OTP_info
+from socsec.tools import version2int
+from socsec.tools import int2version
 from ecdsa import SigningKey, NIST384p
 
 
