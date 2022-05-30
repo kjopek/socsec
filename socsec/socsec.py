@@ -1212,7 +1212,6 @@ class Sec(object):
                               alg_data, key_in_otp, rsa_key_order)
 
         output_fd.write(bytes(output_image))
-        output_fd.close()
 
     def make_sv_partation_image(self, alg_data, descriptor, rsa_key_order,
                                 signing_helper, signing_helper_with_files):
@@ -2122,6 +2121,7 @@ class secTool(object):
                                        args.signing_helper_with_files,
                                        args.stack_intersects_verification_region,
                                        args.deterministic)
+        args.output.close()
 
     def make_sv_chain_image(self, args):
         """Implements the 'make_sv_chain_image' sub-command."""
